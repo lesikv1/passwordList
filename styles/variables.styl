@@ -92,6 +92,11 @@ shadow(key = m)
   if key is xs
     +web()
       box-shadow 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
+  if key is no
+    +web()
+      box-shadow none
+    +native()
+      elevation 0
 
 // Font styles
 
@@ -113,8 +118,6 @@ $mobile ?= 480px
 $tablet ?= 768px
 $desktop ?= 1024px
 $wide ?= 1300px
-
-$cardHeight ?= 150px
 
 // -----------------------------------------------------------------------------
 //   Fonts

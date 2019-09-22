@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import {
   View,
   Text,
-  TouchableOpacity
+  TouchableOpacity,
+  Platform,
+  ScrollView
 } from 'react-native'
 import {
   observer,
@@ -10,7 +12,7 @@ import {
   useApi,
   $root
 } from 'startupjs'
-import { AddPassword } from 'main/Components'
+import { AddPassword, AddingPassword } from 'main/Components'
 import axios from 'axios'
 
 import './index.styl'
@@ -18,8 +20,25 @@ import './index.styl'
 export default observer(function Main () {
   let [visible, setVisible] = useState(false)
 
+  const web = pug`
+    View.button
+      AddPassword.button(onPress=() => setVisible(true))
+    if visible
+      AddingPassword(onClose=() => setVisible(false))
+  `
+  const mobile = pug`
+    unless visible
+      View.button
+        AddPassword.button(onPress=() => setVisible(true))
+    if visible
+      AddingPassword(onClose=() => setVisible(false))
+  `
+
   return pug`
-    View.root
-      AddPassword(onPress=() => setVisible(true))
+    ScrollView.root
+      if Platform.OS === 'web'
+        = web
+      else 
+        = mobile
   `
 })

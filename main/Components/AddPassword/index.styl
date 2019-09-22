@@ -7,7 +7,10 @@ _white = $colors.white
   align-items center
   justify-content center
   background _dark
-  box-shadow 0 1px 5px 0 rgb(218, 13, 13), 0 7px 17px 0 rgba(247, 0, 0, 0.8);
+  +web()
+    box-shadow 0 1px 5px 0 rgb(218, 13, 13), 0 7px 17px 0 rgba(247, 0, 0, 0.8);
+  +native()
+    shadow(m)
 
 .text
   color _white

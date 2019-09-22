@@ -1,0 +1,141 @@
+_active = $colors.primary
+_height = 30px
+_font = font(l)
+_line = 22px
+_padding = (_height - _line) / 2
+_icon = 25px
+_label = 12px
+_main = $colors.main
+_description = $colors.description
+_inputBg = $colors.bgAlt
+_red1 = $colors.red1
+
+.root
+  margin-top 4px
+  margin-bottom 4px
+
+.message-wrapper, .description-wrapper
+  flex-direction row
+  justify-content space-between
+
+.label, .description
+  align-self flex-start
+  font-size _label
+  line-height _label
+  color rgba(black, 0.3)
+  &-focused
+    color _active
+
+.required
+  color _red1
+
+.description
+  margin-top gutter()
+
+.error
+  align-self flex-end
+  font-size _label
+  line-height _label
+  color rgba(red)
+
+.wrapper
+  flex-direction row
+  align-items center
+  justify-content center
+  border-bottom-width 1px
+
+  &-reverse
+    flex-direction row-reverse
+
+.input
+  flex 1
+  padding-top _padding
+  padding-bottom _padding
+  padding-left 0
+  padding-right 0
+  color _main
+  &-l
+    font-size _font
+    line-height _line
+  &-m
+    font-size font(m)
+    line-height @font-size * 1.5
+  &-s
+    font-size font(s)
+    line-height @font-size * 1.5
+  &-description
+    color _description
+  &-pure
+    flex 0 1 auto
+  &-uppercase
+    text-transform uppercase
+  +web()
+    &::placeholder
+      color rgba(black, 0.3)
+    &:focus
+      outline 0
+
+.icon
+  font-size _icon
+  line-height _icon
+  width _icon
+  text-align center
+
+  &:not(&-reverse)
+    margin-left gutter(s)
+  &-reverse
+    margin-right gutter(s)
+
+-text
+  .wrapper&
+    border-bottom-color transparent
+
+-contrast
+  .root&
+    border-radius 4px
+    padding 0 gutter()
+    margin 0
+  .wrapper&
+    border-bottom-color rgba(black, 0.05)
+    border-bottom-width 2px
+  .wrapper&
+  .message-wrapper&
+    background _inputBg
+    bleed(gutter())
+  .message-wrapper&
+    padding-top gutter(s)
+    border-top-left-radius gutter(s)
+    border-top-right-radius gutter(s)
+
+-outlined
+  .wrapper&
+    border-bottom-color rgba(black, 0.05)
+
+-light
+  .label&
+    color rgba(white, 0.5)
+  .icon&
+    color rgba(white, 0.5)
+  .input&
+    color rgba(white, 0.8)
+    +web()
+      &::placeholder
+        color rgba(255,255,255,0.3)
+  .wrapper&
+    border-bottom-color rgba(white, 0.5)
+
+-readonly
+  .input&
+    background-color  rgba(#f3f3f3, 0.9)
+    // cursor not-allowed - commented cause not supported in react-native
+    +web()
+      &::placeholder
+        color rgba(68,68,68,0.3)
+
+.wrapper
+  &-error
+    border-bottom-color red
+  &-focused
+    border-bottom-color _active
+
+
