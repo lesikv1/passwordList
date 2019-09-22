@@ -20,6 +20,6 @@ export default observer(function AddPssword ({onPress}) {
 
   return pug`
     TouchableOpacity.root(onPress=onPress)
-      Text.text Add pssword for servece
+      Text.text Add password for servece
   `
 })

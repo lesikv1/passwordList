@@ -17,7 +17,6 @@ import axios from 'axios'
 
 import './index.styl'
 export default observer(function AddPssword ({onClose, onSave}) {
-
   let [name, setName] = useState('')
   let [password, setPassword] = useState('')
   let [recovery, setRecovery] = useState('')

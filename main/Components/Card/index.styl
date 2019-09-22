@@ -2,21 +2,44 @@ _dark = $colors.dark
 _white = $colors.white
 
 .root
-  width 200px
+  width 350px
   height 100px
-  align-items center
   justify-content center
   background _dark
   margin-left gutter(m)
   margin-top gutter(m)
+  display flex
+  flex-direction row
   +web()
     box-shadow 0 1px 5px 0 rgb(218, 13, 13), 0 7px 17px 0 rgba(247, 0, 0, 0.8);
   +native()
     shadow(m)
 
+.info
+  width 80%
+  padding-top gutter(m)
+
+.edit
+.delete
 .text
   color _white
   padding-left gutter(m)
   font-size font(m)
   font-weight lighter
   font-weight 700
+
+.buttons
+  width 20%
+  justify-content space-between
+
+.delete
+  color #ff7675
+  margin-top gutter(m)
+
+.edit
+  color #fdcb6e
+  margin-bottom gutter(m)
+
+.btn
+  width 100%
+  
