@@ -1,0 +1,111 @@
+{
+  "bg"            : "#f9f9f9",
+  "bgAlt"         : "#f1f1f1",
+  "border"        : "#ededed",
+  "primary"       : "#ff9800",
+  "primaryBg"     : "#ff9800",
+  "secondary"     : "rgb(225, 0, 80)",
+
+  "accent"        : "#3ecf8e",
+  "accentBg"      : "#f6fff5",
+
+  "success"       : "#3ecf8e",
+  "successBg"     : "#f6fff5",
+  "successBorder" : "rgba(58,193,51,.12)",
+
+  "error"         : "#d66d75",
+
+  "info"          : "#3297d3",
+  "infoBg"        : "rgba(231,255,255,.8)",
+  "infoBorder"    : "rgba(184,253,254,.8)",
+
+  "main"          : "#444444",
+  "description"   : "#9696a0",
+  "link"          : "#008FFC",
+
+  "// ----- PRIMARY COLORS ----- //": 0,
+
+  "main1"         : "#2a438b",
+  "main2"         : "#009cdd",
+
+  "// ----- GRADIENTS ------ //": 0,
+
+  "blue1"         : "#2a438b",
+  "blue2"         : "#009cdd",
+
+  "darkBg1"      : "#0e0e14",
+  "darkBg2"      : "#2e2e42",
+
+  "purple1"       : "#614385",
+  "purple2"       : "#516395",
+
+  "teal1"         : "#13547a",
+  "teal2"         : "#80d0c7",
+
+  "green1"        : "#56ab2f",
+  "green2"        : "#a8e063",
+
+  "greenBg1"      : "#005310",
+  "greenBg2"      : "#00c238",
+
+  "red1"          : "#d66d75",
+  "red2"          : "#e29587",
+
+  "gray1"         : "#777777",
+  "gray2"         : "#999999",
+
+  "grayBg1"      : "#dbdbdc",
+  "grayBg2"      : "#eeefef",
+
+  "grayPin"      : "#9b9b9b",
+
+  "yellow1"       : "#e6e142",
+  "yellow2"       : "#f3f7aa",
+
+"// ----- TEXTS / FORMS / ICONS ----- ": 0,
+
+  "blackGray"     : "#2e2e42",
+  "darkGray"      : "#404053",
+  "mediumGray"    : "#636372",
+  "gray"          : "#75787b", 
+  "textGray"      : "#8e8e8e",
+  "transparentGray":"rgba(128,128,128,0.1)",
+  "borderGray"    : "rgba(128,128,128,0.3)",
+
+  "// ----- BACKGROUNDS ----- //": 0,
+
+  "lightGray"     : "#eeeeee",
+  "lightGray2"    : "#d0d0ce",
+  "lightGray3"    : "#efefef",
+  "whiteGray"     : "#f5f5f5",
+  "white"         : "#ffffff",
+
+  "darkDeep"      : "#454545",
+  "darkMedium"    : "#575757",
+  "black"         : "#000000",
+  "tabBg"         : "rgba(255,152,0,0.1)",
+
+  "// ----- MAIN PALETTE ----- //": 0,
+
+  "blue"          : "#00a2e0",
+  "lightBlue"     : "#c6efff",
+
+  "red"           : "#d63031",
+  "lightRed"      : "#fadada",
+
+  "green"         : "#86bc25",
+  "lightGreen"    : "#b2d97b",
+  "lightGreen2"   : "#c6e8d0",
+
+  "teal"          : "#70c2b4",
+  "mediumTeal"    : "#b4e1d2",
+  "lightTeal"     : "#ddefe8",
+
+  "orange"        : "#ff9800",
+
+  "dark"          : "#2d3436",
+
+  "// ----- RADIAL-CHARTS ---- //": 0,
+  "greenRadial": "#4eaf3a",
+  "redRadial": "#cc0a0a"
+}

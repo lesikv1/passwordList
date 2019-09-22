@@ -1,0 +1,23 @@
+_pageWidth = 460px
+_bg = $colors.bg
+_link = $colors.link
+
+.page
+  background-color _bg
+
++web()
+  html
+    height 100%
+    overflow-x hidden
+    &, div
+      font-family $fontNative !important
+  body
+    height 100%
+  a
+    display inline-flex
+    text-decoration none
+  :global(#app)
+    height 100%
+    display flex
+    flex-direction column
+    @extend .page
