@@ -61,7 +61,7 @@ export default observer(function Main () {
       EditPassword(onClose=() => setShowEdit(false) saveEdit=(data) => saveEdit(data) card=card)
   `
   const mobile = pug`
-    unless visible
+    unless visible && showEdit
       View.content
         AddPassword(onPress=() => setVisible(true))
         for card in cards.filter(Boolean)
